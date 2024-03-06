@@ -2,9 +2,8 @@
   "name": "@ZOOIZOOI/eslint-config",
   "version": "1.0.0",
   "description": "ESLint Config",
-  "main": "eslint.config.js",
+  "main": "index.js",
   "author": "ZOOI",
-  "type": "module",
   "dependencies": {
     "@eslint/js": "^8.57.0",
     "@stylistic/eslint-plugin": "^1.6.3",

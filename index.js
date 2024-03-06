@@ -1,10 +1,8 @@
-import eslint  from '@eslint/js';
-import tseslint from 'typescript-eslint';
-import stylistic from '@stylistic/eslint-plugin';
+const eslint = require('@eslint/js');
+const tseslint = require('typescript-eslint');
+const stylistic = require('@stylistic/eslint-plugin');
 
-export default tseslint.config(
-    eslint.configs.recommended,
-    ...tseslint.configs.recommended,
+const config = [
     {
         plugins: {
             '@stylistic': stylistic
@@ -23,4 +21,16 @@ export default tseslint.config(
             '@stylistic/eol-last': ['error', 'never']
         }
     }
-);
+];
+
+module.exports = {
+    vanilla: [
+        eslint.configs.recommended,
+        ...config,
+    ],
+    typescript: tseslint.config(
+        eslint.configs.recommended,
+        ...tseslint.configs.recommended,
+        ...config,
+    )
+};
