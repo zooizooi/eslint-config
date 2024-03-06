@@ -27,10 +27,20 @@ module.exports = {
     vanilla: [
         eslint.configs.recommended,
         ...config,
+        {
+            rules: {
+                'no-unused-vars': 'warn',
+            }
+        }
     ],
     typescript: tseslint.config(
         eslint.configs.recommended,
         ...tseslint.configs.recommended,
         ...config,
+        {
+            rules: {
+                '@typescript-eslint/no-unused-vars': 'warn',
+            }
+        }
     )
 };
