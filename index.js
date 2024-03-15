@@ -12,7 +12,6 @@ const config = [
         rules: {
             'semi': 'error',
             'object-curly-spacing': ['error', 'always'],
-            'linebreak-style': ['error', 'unix'],
             'quotes': ['error', 'single'],
             'space-in-parens': ['error', 'never'],
             'key-spacing': ['error',  { 'afterColon': true }],
