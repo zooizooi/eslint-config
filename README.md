@@ -4,15 +4,15 @@
 ### Install
 ```bash
 # npm
-npm install @ZOOIZOOI/eslint-config
+npm install @zooizooi/eslint-config
 
 # pnpm
-pnpm add @ZOOIZOOI/eslint-config
+pnpm add @zooizooi/eslint-config
 ```
 
 ### Use
 ```js
-import config from '@ZOOIZOOI/eslint-config';
+import config from '@zooizooi/eslint-config';
 
 // Vanilla
 export default config.vanilla;
