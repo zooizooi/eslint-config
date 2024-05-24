@@ -17,7 +17,14 @@ const config = [
             'key-spacing': ['error',  { 'afterColon': true }],
             '@stylistic/indent': ['error', 4],
             '@stylistic/space-before-function-paren': ['error', 'never'],
-            '@stylistic/eol-last': ['error', 'never']
+            '@stylistic/eol-last': ['error', 'never'],
+            '@stylistic/space-infix-ops': 'error',
+            '@stylistic/comma-dangle': ['error', 'always-multiline'],
+            '@stylistic/function-call-spacing': 'error',
+            '@stylistic/no-trailing-spaces': 'error',
+            '@stylistic/padded-blocks': ['error', 'never'],
+            '@stylistic/no-multiple-empty-lines': ['error', { 'max': 1 }],
+            '@stylistic/space-before-blocks': 'error',
         }
     }
 ];
@@ -39,7 +46,7 @@ module.exports = {
         {
             rules: {
                 '@typescript-eslint/no-unused-vars': 'warn',
-                '@typescript-eslint/no-explicit-any': 'warn'
+                '@typescript-eslint/no-explicit-any': 'warn',
             }
         }
     )
