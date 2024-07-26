@@ -7,6 +7,7 @@ ni @zooizooi/eslint-config
 ```
 
 ### Use
+Add the following in `eslint.config.js`
 ```js
 import config from '@zooizooi/eslint-config';
 
