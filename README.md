@@ -20,12 +20,12 @@ export default config.typescript;
 
 ### Custom rules
 ```js
-export default {
+export default [
     ...config.vanilla,
     {
         rules: {
             '***': '***'
         }
     }
-}
+]
 ```
