@@ -3,11 +3,7 @@
 
 ### Install
 ```bash
-# npm
-npm install @zooizooi/eslint-config
-
-# pnpm
-pnpm add @zooizooi/eslint-config
+ni @zooizooi/eslint-config
 ```
 
 ### Use
