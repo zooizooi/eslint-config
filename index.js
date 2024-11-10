@@ -25,6 +25,8 @@ const config = [
             '@stylistic/padded-blocks': ['error', 'never'],
             '@stylistic/no-multiple-empty-lines': ['error', { 'max': 1 }],
             '@stylistic/space-before-blocks': 'error',
+            '@stylistic/keyword-spacing': ['error', { 'before': true }],
+            '@stylistic/no-multi-spaces': ['error'],
         }
     }
 ];
