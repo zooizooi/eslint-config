@@ -27,6 +27,7 @@ const config = [
             '@stylistic/space-before-blocks': 'error',
             '@stylistic/keyword-spacing': ['error', { 'before': true }],
             '@stylistic/no-multi-spaces': ['error'],
+            '@stylistic/no-extra-semi': ['error'],
         }
     }
 ];
