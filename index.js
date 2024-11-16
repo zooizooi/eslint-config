@@ -28,6 +28,12 @@ const config = [
             '@stylistic/keyword-spacing': ['error', { 'before': true }],
             '@stylistic/no-multi-spaces': ['error'],
             '@stylistic/no-extra-semi': ['error'],
+            '@stylistic/lines-between-class-members': ['error', {
+                enforce: [
+                    { blankLine: 'always', prev: 'method', next: 'method' },
+                    { blankLine: 'always', prev: 'field', next: 'method' },
+                ],
+            }],
         }
     }
 ];
