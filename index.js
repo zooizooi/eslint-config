@@ -1,11 +1,19 @@
 const eslint = require('@eslint/js');
 const tseslint = require('typescript-eslint');
 const stylistic = require('@stylistic/eslint-plugin');
+const globals = require('globals');
 
 const config = [
     {
         plugins: {
             '@stylistic': stylistic,
+        },
+    },
+    {
+        languageOptions: {
+            globals: {
+                ...globals.browser,
+            },
         },
     },
     {
