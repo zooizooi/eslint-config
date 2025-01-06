@@ -13,6 +13,7 @@ const config = [
         languageOptions: {
             globals: {
                 ...globals.browser,
+                ...globals.node,
             },
         },
     },
