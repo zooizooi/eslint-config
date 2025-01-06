@@ -5,7 +5,7 @@ const stylistic = require('@stylistic/eslint-plugin');
 const config = [
     {
         plugins: {
-            '@stylistic': stylistic
+            '@stylistic': stylistic,
         },
     },
     {
@@ -14,7 +14,7 @@ const config = [
             'object-curly-spacing': ['error', 'always'],
             'quotes': ['error', 'single'],
             'space-in-parens': ['error', 'never'],
-            'key-spacing': ['error',  { 'afterColon': true }],
+            'key-spacing': ['error', { 'afterColon': true }],
             '@stylistic/indent': ['error', 4],
             '@stylistic/space-before-function-paren': ['error', 'never'],
             '@stylistic/eol-last': ['error', 'never'],
@@ -28,14 +28,15 @@ const config = [
             '@stylistic/keyword-spacing': ['error', { 'before': true }],
             '@stylistic/no-multi-spaces': ['error'],
             '@stylistic/no-extra-semi': ['error'],
+            '@stylistic/arrow-spacing': ['error'],
             '@stylistic/lines-between-class-members': ['error', {
                 enforce: [
                     { blankLine: 'always', prev: 'method', next: 'method' },
                     { blankLine: 'always', prev: 'field', next: 'method' },
                 ],
             }],
-        }
-    }
+        },
+    },
 ];
 
 module.exports = {
@@ -45,8 +46,8 @@ module.exports = {
         {
             rules: {
                 'no-unused-vars': 'warn',
-            }
-        }
+            },
+        },
     ],
     typescript: tseslint.config(
         eslint.configs.recommended,
@@ -56,7 +57,7 @@ module.exports = {
             rules: {
                 '@typescript-eslint/no-unused-vars': 'warn',
                 '@typescript-eslint/no-explicit-any': 'warn',
-            }
-        }
-    )
+            },
+        },
+    ),
 };
