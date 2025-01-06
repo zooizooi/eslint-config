@@ -1,6 +1,6 @@
 {
   "name": "@zooizooi/eslint-config",
-  "version": "1.1.7",
+  "version": "1.1.8",
   "description": "ESLint Config",
   "main": "index.js",
   "author": "ZOOI",
