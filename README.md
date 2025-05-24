@@ -3,7 +3,7 @@
 
 ### Install
 ```bash
-ni @zooizooi/eslint-config
+ni @zooizooi/eslint-config --save-dev
 ```
 
 ### Use
